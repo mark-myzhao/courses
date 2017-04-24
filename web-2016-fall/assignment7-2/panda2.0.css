@@ -1,0 +1,250 @@
+html {
+    background-color: rgb(28, 30, 27);
+}
+
+h1 {
+    color: rgb(204, 217, 193);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#positioner {
+    /*    background-color: rgb(1, 1, 1);*/
+    /*    opacity: 1;*/
+    width: 500px;
+    height: 510px;
+    margin: 0 auto 0 auto;
+}
+#playground {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+}
+.blocks {
+    border-top-color: #C0C0C0;
+    border-left-color: #C0C0C0;
+    border-right-color: #6C6C6C;
+    border-bottom-color: #6C6C6C;
+    border-radius: 5px;
+    width: 88px;
+    height: 88px;
+    margin: 1px;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    /*    position: absolute;*/
+    transition: all 0.3s;
+    position: absolute;
+}
+.blocks:active {
+    border-color: #6C6C6C;
+}
+.blocks:focus {
+    outline: none;
+}
+#block0 {
+    background-image: url(images/1.jpg);
+}
+#block1 {
+    background-image: url(images/2.jpg);
+}
+#block2 {
+    background-image: url(images/3.jpg);
+}
+#block3 {
+    background-image: url(images/4.jpg);
+}
+#block4 {
+    background-image: url(images/5.jpg);
+}
+#block5 {
+    background-image: url(images/6.jpg);
+}
+#block6 {
+    background-image: url(images/7.jpg);
+}
+#block7 {
+    background-image: url(images/8.jpg);
+}
+#block8 {
+    background-image: url(images/9.jpg);
+}
+#block9 {
+    background-image: url(images/10.jpg);
+}
+#block10 {
+    background-image: url(images/11.jpg);
+}
+#block11 {
+    background-image: url(images/12.jpg);
+}
+#block12 {
+    background-image: url(images/13.jpg);
+}
+#block13 {
+    background-image: url(images/14.jpg);
+}
+#block14 {
+    background-image: url(images/15.jpg);
+}
+#block15 {
+    background-image: url(images/empty.jpg);
+    opacity: 0;
+    border: 2px none;
+}
+
+.blocksPos0 {
+    left: 0;
+    top: 0;
+}
+.blocksPos1 {
+    left: 89px;
+    top: 0;
+}
+.blocksPos2 {
+    left: 178px;
+    top: 0;
+}
+.blocksPos3 {
+    left: 267px;
+    top: 0;
+}
+.blocksPos4 {
+    left: 0;
+    top: 89px;
+}
+.blocksPos5 {
+    left: 89px;
+    top: 89px;
+}
+.blocksPos6 {
+    left: 178px;
+    top: 89px;
+}
+.blocksPos7 {
+    left: 267px;
+    top: 89px;
+}
+.blocksPos8 {
+    left: 0;
+    top: 178px;
+}
+.blocksPos9 {
+    left: 89px;
+    top: 178px;
+}
+.blocksPos10 {
+    left: 178px;
+    top: 178px;
+}
+.blocksPos11 {
+    left: 267px;
+    top: 178px;
+}
+.blocksPos12 {
+    left: 0;
+    top: 267px;
+}
+.blocksPos13 {
+    left: 89px;
+    top: 267px;
+}
+.blocksPos14 {
+    left: 178px;
+    top: 267px;
+}
+.blocksPos15 {
+    left: 267px;
+    top: 267px;
+}
+#emptyBlock {
+    background-image: url(images/empty.jpg);
+    border: 2px none;
+    width: 88px;
+    height: 88px;
+    padding: 2px;
+    margin: 1px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+.emptyBlockPos {
+    position: absolute;
+    left: 267px;
+    top: 267px;
+}
+#bar {
+    /*    text-align: center;*/
+    width: 250px;
+    margin-top: 20px;
+    margin-left: -104px;
+    position: absolute;
+    left: 50%;
+    top: 430px;
+}
+.cmd {
+    padding: 0;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(225, 229, 228);
+    border-radius: 5px;
+    border-right-color: #6C6C6C;
+    border-bottom-color: #6C6C6C;
+    border-top-color: #B0B0B0;
+    border-left-color: #B0B0B0;
+    transition: all 0.6s;
+}
+.cmd:focus {
+    outline: none;
+}
+#tryAgain {
+    margin-left: 10px;
+}
+#steps {
+    top: -3px;
+    left: 114px;
+}
+#clock {
+    top: -3px;
+    left: 0;
+}
+#steps, #clock {
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+    margin-top: 3px;
+    border-style: none;
+    color: rgb(204, 217, 193);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+#stepsLast {
+    top: 41px;
+    left: 114px;
+}
+#clockLast {
+    top: 41px;
+    left: 0;
+}
+#stepsLast, #clockLast {
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+    margin-top: 3px;
+    border-style: none;
+    color: rgb(204, 217, 193);
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s;
+}

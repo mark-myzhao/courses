@@ -1,0 +1,90 @@
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#main {
+  border: 2px solid rgba(128, 128, 128, 0.08);
+  border-radius: 10px;
+  background-color: #EDEFF0;
+  width: 386px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, #cmd, p {
+  text-align: center;
+}
+p > span {
+  vertical-align: sub;
+}
+.mes {
+  border-style: none none solid none;
+  border-color: #D9DCDE;
+  background-color: #EDEFF0;
+  width: 134px;
+  height: 15px;
+  margin-left: 28px;
+  padding-bottom: 2px;
+  padding-top: 0;
+}
+.mes:focus {
+  outline: none;
+}
+#userName > .mes {
+  width: 134px;
+  margin-left: 10px;
+}
+.warning {
+  width: 40px;
+  border-style: none;
+  background-color: #EDEFF0;
+  color: red;
+}
+#signin {
+  position: relative;
+  left: 64px;
+  text-decoration: none;
+
+  font-weight: normal;
+  margin-left: 5px;
+  font-size: 16px;
+  padding: 3px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+
+  color: #8c96a0;
+  border:1px solid #dce1e6;
+  box-shadow: 0 1px 2px #fff inset,0 -1px 0 #a8abae inset;
+  background: -webkit-linear-gradient(top,#f2f3f7,#e4e8ec);
+  background: -moz-linear-gradient(top,#f2f3f7,#e4e8ec);
+  background: linear-gradient(top,#f2f3f7,#e4e8ec);
+}
+.but {
+  cursor: pointer;
+  position: relative;
+  left: 22px;
+  font-weight: normal;
+  margin-left: 8px;
+  font-size: 16px;
+  padding: 3px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+
+  border: 1px solid #333;
+  box-shadow: 0 1px 2px #8b8b8b inset,0 -1px 0 #3d3d3d inset,0 -2px 3px #8b8b8b inset;
+  background: -webkit-linear-gradient(top,#656565,#4c4c4c);
+  background: -moz-linear-gradient(top,#656565,#4a4a4a);
+  background: linear-gradient(top,#656565,#4a4a4a);
+}
+#repPas {
+  width: 70px;
+}
+.error {
+  text-align: center;
+  color: red;
+}
+

@@ -1,0 +1,242 @@
+body {
+    font-family: sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+}
+
+#calculator-container {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bottom-positioner {
+    width: 300px;
+    height:300px;
+    position: relative;
+    top: 30%;
+    left: 50%;
+}
+
+#button {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 135px;
+}
+
+#info-bar {
+    opacity: 0;
+    color: #00E59D;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 1px 1px #888888;
+    transition: all 0.5s;
+}
+.info-bar-color {
+    background-color: #1D439F;
+}
+.button {
+    opacity: 0;
+    background-color: #1D439F;
+    color: #069378;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 1px #888888;
+    transition-property: top,left,opacity,background,width,height,line-height;
+    transition-duration: 0.5s;
+}
+.button > span {
+    color: white;
+    font-size: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 17px;
+    height: 17px;
+    line-height: 19px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -36px;
+    left: 20px;
+    transition: all 0.3s;
+}
+#control-ring-container {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.inputA {
+    top: 0;
+}
+.inputB {
+    top: -25px;
+}
+.inputC {
+    top: -50px;
+}
+.inputD {
+    top: -75px;
+}
+.inputE {
+    top: -100px;
+}
+.apb {
+    background-color: #1D439F;
+    background-image: url(./assets/images/atplus_white.png);
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 1px #888888;
+    transition: all 0.5s ease-in 0.5s;
+}
+#judge {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#button:hover #button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 135px;
+}
+
+#button:hover #info-bar {
+    opacity: 1;
+    position: absolute;
+    top: -152px;
+    left: -52px;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    z-index: 1;
+}
+#button:hover .button {
+    opacity: 1;
+    overflow: visible;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    top: 0;
+    left: 0;
+    /*transition: all 0.5s;*/
+    z-index: 1;
+    transition-property: top,left,opacticy,background,width,height,line-height;
+    transition-duration: 0.5s;
+}
+
+#button:hover .button > span {
+    position: relative;
+    top: -36px;
+    left: 20px;
+    transition: all 0.5s;
+}
+#button:hover #control-ring-container {
+    width: 43px;
+    height: 43px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#button:hover .inputA {
+    top: -35px;
+    left: -67px;
+}
+#button:hover .inputB {
+    top: -30px;
+    left: -78px;
+}
+#button:hover .inputC {
+    top: -25px;
+    left: -64px;
+}
+#button:hover .inputD {
+    top: -33px;
+    left: -31px;
+}
+#button:hover .inputE {
+    top: -71px;
+    left: 12px;
+}
+#button:hover .apb {
+    background-image: url(./assets/images/atplus_green.png);
+    background-size: 38px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    transition: all 0.5s ease-in 0s;
+    z-index: 1;
+}
+#button:hover #judge {
+    width: 146px;
+    height: 152px;
+    position: absolute;
+    left: -72px;
+    top: -55px;
+    z-index: 0;
+}
+
+/*---*/
+.waiting {
+    width: 17px;
+    height: 17px;
+    background-color: red;
+    transition: all 0.5s;
+}
+.disabled {
+    color: white;
+    background-color: gray;
+}
+.cli:active {
+    transform: translate(2px, 2px);
+}
+#random {
+    position: absolute;
+    left: -15px;
+    top: -173px;
+}

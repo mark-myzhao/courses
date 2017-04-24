@@ -1,0 +1,25 @@
+extends layout
+block content
+  body
+    #main
+      h1 用户详情
+
+      if extraError
+        div.error #{extraError}
+
+      p 用户名
+        span #{user.username}
+
+      p 学号
+        span #{user.sid}
+
+      p 电话
+        span #{user.phone}
+
+      p 邮箱
+        span #{user.email}
+
+      p
+        a.signout(href='/signout') 登出
+
+  link(rel='stylesheet' href='/stylesheets/detail.css')

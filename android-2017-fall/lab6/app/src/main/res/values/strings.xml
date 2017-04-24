@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Player</string>
+
+    <string name="img_des">Album Cover</string>
+
+    <string name="file_path_text">Loaded Media File:  /data/BlankSpace.mp3</string>
+    <string name="status_text">IDLE</string>
+
+    <string name="time_demo">00:00</string>
+
+    <string name="play">PLAY</string>
+    <string name="pause">PAUSE</string>
+    <string name="stop">STOP</string>
+    <string name="quit">QUIT</string>
+</resources>

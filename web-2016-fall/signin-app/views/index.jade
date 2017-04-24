@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  #main
+    h1 用户注册
+    form(action="/regist" method="post")
+      if error
+        div.error #{error}
+      p#userName
+        span 用户名:
+        input.mes(type="text" name="username" pattern="^[a-zA-Z][a-zA-Z0-9_]{6,18}$"
+        required="required" title="6~18位英文字母、数字或下划线，必须以英文字母开头")
+        input.warning(disabled="disabled")
+
+      p
+        span 密码:
+        input.mes#password(type="password" name="password" pattern="^[a-zA-Z0-9_-]{6,12}$"
+        required="required" title="6~12位数字、大小写字母、中划线、下划线")
+        input.warning(disabled="disabled")
+
+      p
+        span 重复密码:
+        input.mes#repeatPassword(type="password" name="repeatPassword" required="required" title="repeatPassword")
+        input.warning#repPas(disabled="disabled")
+
+      p
+        span 学号:
+        input.mes(type="text" name="sid" pattern="^[1-9][0-9]{7}$"
+        required="required" title="8位数字，不能以0开头")
+        input.warning(disabled="disabled")
+
+      p
+        span 电话:
+        input.mes(type="text" name="phone" pattern="^[1-9][0-9]{10}$"
+        required="required" title="11位数字，不能以0开头")
+        input.warning(disabled="disabled")
+
+      p
+        span 邮箱:
+        input.mes(type="text" name="email" pattern="^[a-zA-Z0-9_\-]+@(([a-zA-Z_0-9\-])+\.)+[a-zA-Z]{2,4}$"
+        required="required" title="请输入合法邮箱")
+        input.warning(disabled="disabled")
+
+      p
+        input.but#reset(type="reset" value="重置")
+        input.but#submit(type="submit" value="注册")
+        a#signin(href='/signin') 登录
+
+
+  script(type="text/javascript" src="javascripts/validator.js")
+  script(type="text/javascript" src="javascripts/signup.js")
+  link(rel='stylesheet' href='/stylesheets/signup.css')
+  //script(src="signUpPage.js" language="JavaScript")

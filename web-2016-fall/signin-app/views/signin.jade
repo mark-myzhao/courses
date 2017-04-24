@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  #main
+    h1 用户登录
+    form(action="/signin" method="post")
+
+      if error
+        div.error #{error}
+
+      if extraError
+        div.error #{extraError}
+
+      p#userName
+        span 用户名:
+        input.mes(type="text" name="username" required="required")
+        input.warning(disabled="disabled")
+
+      p
+        span 密码:
+        input.mes#password(type="password" name="password" required="required")
+        input.warning(disabled="disabled")
+
+      p
+        input.but#reset(type="reset" value="重置")
+        input.but#submit(type="submit" value="登录" )
+        a#signin(href='./regist') 注册
+
+
+  script(type="text/javascript" src="javascripts/validator.js")
+  link(rel='stylesheet' href='/stylesheets/signup.css')
+  //script(src="signUpPage.js" language="JavaScript")

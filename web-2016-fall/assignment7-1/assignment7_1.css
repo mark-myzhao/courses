@@ -1,0 +1,60 @@
+body {
+    font-family: serif;
+}
+
+table, td, th {
+    border: 1px solid #40C2A8;
+    border-collapse: collapse;
+}
+table {
+    font-size: 18px;
+    text-align: left;
+}
+th, td {
+    padding: 3px 10px 3px 3px;
+}
+th {
+    padding-right: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+thead {
+    background-color: #00157E;
+    color: white;
+}
+.alternate {
+    background-color: #DFDEDC;
+}
+
+.todoTitle1Up, .todoTitle1Down {
+    background: #A4ACFF no-repeat 95% 2px;
+}
+.todoTitle2Up, .todoTitle2Down {
+    background: #A4ACFF no-repeat 95% 2px;
+}
+.todoTitle3Up, .todoTitle3Down {
+    background: #A4ACFF no-repeat 95% 2px;
+}
+.todoTitle1Up, .todoTitle2Up, .todoTitle3Up {
+    background-image: url(image/ascend.png);
+}
+.todoTitle1Down, .todoTitle2Down, .todoTitle3Down {
+    background-image: url(image/descend.png);
+}
+
+.staffTitle1Up, .staffTitle1Down {
+    background: #A4ACFF no-repeat 95% 2px;
+}
+.staffTitle2Up, .staffTitle2Down {
+    background: #A4ACFF no-repeat 95% 2px;
+}
+.staffTitle3Up, .staffTitle3Down {
+    background: #A4ACFF no-repeat 95% 2px;
+}
+.staffTitle1Up, .staffTitle2Up, .staffTitle3Up {
+    background-image: url(image/ascend.png);
+}
+.staffTitle1Down, .staffTitle2Down, .staffTitle3Down {
+    background-image: url(image/descend.png);
+}

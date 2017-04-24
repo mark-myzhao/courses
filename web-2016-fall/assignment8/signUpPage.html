@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--register-->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="signUpPage.css" />
+        <script src="jquery-2.1.4.js" language="JavaScript"></script>
+        <script src="signUpPage.js" language="JavaScript"></script>
+        <title>Register</title>
+    </head>
+    <body>
+    <div id="main">
+        <h1>用户注册</h1>
+        <form action="/" method="post">
+            <p id="userName">
+                <span>用户名:</span>
+                <input type="text" name="username" title="username" class="mes" />
+                <input disabled="disabled" class="warning" />
+            </p>
+            <p>
+                <span>学号:</span>
+                <input type="text" name="id" title="id" class="mes" />
+                <input disabled="disabled" class="warning" />
+            </p>
+            <p>
+                <span>电话:</span>
+                <input type="text" name="phone" title="phone" class="mes" />
+                <input disabled="disabled" class="warning" />
+            </p>
+            <p>
+                <span>邮箱:</span>
+                <input type="text" name="email" title="email" class="mes" />
+                <input disabled="disabled" class="warning" />
+            </p>
+            <p id="cmd">
+                <input type="reset" value="重置" id="reset" />
+                <input type="submit" value="注册" id="submit" disabled="disabled" />
+            </p>
+        </form>
+    </div>
+    </body>
+</html>

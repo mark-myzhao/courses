@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab9</string>
+    
+    <string name="city_name">请输入城市名</string>
+    <string name="search">查询</string>
+    <string name="degree">℃</string>
+</resources>
